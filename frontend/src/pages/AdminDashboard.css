@@ -1,0 +1,353 @@
+:root {
+  --primary-white: #ffffff;
+  --primary-black: #121212;
+  --primary-yellow: #ffd700;
+}
+
+.admin-dashboard-container {
+  min-height: 100vh;
+  background: var(--primary-white);
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.dashboard-main {
+  background: var(--primary-white);
+  padding: 60px 40px;
+  text-align: center;
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-welcome h2 {
+  color: var(--primary-black);
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.dashboard-welcome p {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.dashboard-actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.view-rides-btn, .view-analytics-btn, .view-filter-btn {
+  background: var(--primary-yellow);
+  color: var(--primary-black);
+  border: none;
+  padding: 18px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-rides-btn:hover, .view-analytics-btn:hover, .view-filter-btn:hover {
+  background: #e6c200;
+  transform: translateY(-2px);
+}
+
+.rides-section {
+  background: var(--primary-white);
+  padding: 40px;
+  width: 100%;
+  min-height: calc(100vh - 70px);
+}
+
+.rides-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--primary-yellow);
+}
+
+.rides-header h2 {
+  color: var(--primary-black);
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.back-btn {
+  background: var(--primary-yellow);
+  color: var(--primary-black);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #e6c200;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+}
+
+.no-rides {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  padding: 40px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 18px;
+  color: #666;
+}
+
+.rides-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.ride-item {
+  border: 1px solid #e1e5e9;
+  border-radius: 10px;
+  padding: 25px;
+  background: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: fit-content;
+  min-height: 300px;
+}
+
+.ride-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ride-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.ride-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.status-requested {
+  background-color: #ffa500;
+}
+
+.status-approved {
+  background-color: #28a745;
+}
+
+.status-rejected {
+  background-color: #dc3545;
+}
+
+.status-cancelled {
+  background-color: #6c757d;
+}
+
+.status-completed {
+  background-color: #17a2b8;
+}
+
+.ride-details {
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.detail-row strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.ride-actions {
+  display: flex;
+  justify-content: flex-start; /* Or change to 'flex-end' if you want them right-aligned */
+  gap: 10px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e1e5e9;
+}
+
+.approve-btn, .reject-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 0;
+  flex: none; /* Prevent stretching */
+  min-width: 100px; /* Ensures consistent button size */
+}
+
+.approve-btn {
+  background: var(--primary-yellow);
+  color: var(--primary-black);
+}
+
+.approve-btn:hover {
+  background: #e6c200;
+  transform: translateY(-2px);
+}
+
+.reject-btn {
+  background: var(--primary-black);
+  color: var(--primary-yellow);
+  border: 1px solid var(--primary-yellow);
+}
+
+.reject-btn:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+.ride-actions button {
+  margin-right: 10px;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ride-actions .approve-btn {
+  background: #28a745;
+}
+
+.ride-actions .reject-btn {
+  background: #dc3545;
+}
+
+.rides-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: #f8f9fa;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #e9ecef;
+  width: 100%;
+  gap: 20px;
+}
+
+.summary-item {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.summary-item:hover {
+  transform: translateY(-2px);
+}
+
+.summary-item strong {
+  color: #333;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  
+  .rides-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .rides-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .rides-summary {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 20px;
+    gap: 15px;
+  }
+  
+  .ride-item {
+    margin-bottom: 15px;
+    min-height: 250px;
+  }
+  
+  .dashboard-main {
+    padding: 20px;
+  }
+  
+  .rides-section {
+    padding: 20px;
+  }
+}

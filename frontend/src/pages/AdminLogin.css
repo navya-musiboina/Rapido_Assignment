@@ -1,0 +1,141 @@
+/* Base Styles */
+:root {
+  --primary-color: #FFD700;
+  --secondary-color: #121212;
+  --error-color: #FF3860;
+  --text-color: #333;
+  --light-gray: #F5F5F5;
+  --white: #FFFFFF;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.admin-login-card {
+  background-color: white;
+  border-radius: 19px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  min-height: auto;
+}
+
+.admin-login-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10x;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.error-message {
+  background-color: #fdecea;
+  color: #e74c3c;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 8px;
+}
+
+.admin-login-btn:hover {
+  background-color: #e6c200;
+  transform: translateY(-2px);
+}
+
+.admin-login-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.admin-credentials {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.admin-credentials p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.admin-credentials strong {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .admin-login-card {
+    padding: 30px 20px;
+  }
+  
+  .admin-login-card h2 {
+    font-size: 24px;
+  }
+  
+  .form-group input {
+    padding: 10px 12px;
+  }
+  
+  .admin-login-btn {
+    padding: 12px;
+  }
+} 

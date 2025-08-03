@@ -1,0 +1,213 @@
+/* Base Styles */
+:root {
+  --primary-color: #FFD700;
+  --secondary-color: #121212;
+  --error-color: #FF3860;
+  --text-color: #333;
+  --light-gray: #F5F5F5;
+  --white: #FFFFFF;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Auth Container - Increased Width */
+.auth-container {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px; /* Increased from 450px */
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 1;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  height: 60px; /* Increased logo size */
+  margin-right: 15px;
+}
+
+.logo-header h2 {
+  color: var(--secondary-color);
+  font-size: 2.2rem; /* Increased font size */
+  font-weight: 700;
+}
+
+.welcome-text {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem; /* Increased font size */
+}
+
+.sub-text {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem; /* Increased font size */
+}
+
+/* Form Styles - Wider Inputs */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 2rem; /* Increased spacing */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.8rem; /* Increased spacing */
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.form-input {
+  width: 100px;
+  padding: 15px 20px; /* Increased padding */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Increased border radius */
+  font-size: 1.1rem; /* Increased font size */
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2); /* Increased shadow */
+}
+
+.form-input.error {
+  border-color: var(--error-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.9rem; /* Increased font size */
+  margin-top: 0.5rem; /* Increased spacing */
+  display: block;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 16px; /* Increased padding */
+  border-radius: 8px; /* Increased border radius */
+  font-size: 1.1rem; /* Increased font size */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem; /* Increased spacing */
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #e6c200;
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; /* Increased spacing */
+  font-size: 1rem; /* Increased font size */
+  gap: 15px; /* Added gap between links */
+}
+
+.footer-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.divider {
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 2.5rem;
+  }
+  
+  .logo-header h2 {
+    font-size: 2rem;
+  }
+  
+  .welcome-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 2rem;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .logo-header h2 {
+    font-size: 1.8rem;
+  }
+}

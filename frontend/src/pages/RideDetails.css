@@ -1,0 +1,57 @@
+.ride-details-container {
+  background: #fff; /* White background */
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ride-list {
+  display: flex;
+  flex-direction: column; /* Line-by-line layout */
+  gap: 20px; /* Space between rides */
+}
+
+.ride-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ride-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.ride-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ride-details-btn {
+  background: #ffd700;
+  color: #000;
+}
+
+.cancel-btn {
+  background: #ff4d4d;
+  color: #fff;
+}
