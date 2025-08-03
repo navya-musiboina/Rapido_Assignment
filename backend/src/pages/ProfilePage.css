@@ -1,0 +1,271 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.profile-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left;
+}
+
+.profile-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.btn-danger {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.error {
+  font-size: 1.5rem;
+  color: #e74c3c;
+}
+
+.profile-page h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.form-group input:disabled {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.profile-section h3 {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.profile-section.warning {
+  background: #fff3cd;
+  border-color: #ffeaa7;
+}
+
+.profile-section.warning h3 {
+  color: #856404;
+  border-bottom-color: #856404;
+}
+
+.profile-section.warning p {
+  color: #856404;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 4px;
+}
+
+.required-field {
+  color: #dc3545;
+}
+
+.profile-info p {
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info p:last-child {
+  border-bottom: none;
+}
+
+.profile-info b {
+  color: #333;
+  font-weight: 600;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.loading {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}
+
+.error-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.error-container h2 {
+  color: #721c24;
+  margin-bottom: 15px;
+}
+
+.error-container p {
+  color: #721c24;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.error-container button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.error-container button:hover {
+  background-color: #c82333;
+}

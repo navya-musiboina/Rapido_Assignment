@@ -1,0 +1,161 @@
+.navbar {
+  background: linear-gradient(135deg, #00020b 0%, #05000a 100%);
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 70px;
+}
+
+.navbar-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #ffd600;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+  color: #ffd600;
+  background: rgba(255, 214, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 214, 0, 0.3);
+}
+
+.user-section {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.user-welcome {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-button {
+  background: linear-gradient(45deg, #ffd600, #ffed4e);
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 214, 0, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 214, 0, 0.4);
+  background: linear-gradient(45deg, #ffed4e, #ffd600);
+}
+
+.logout-link {
+  color: #ff6b6b;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background: rgba(255, 107, 107, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logout-link:hover {
+  background: rgba(255, 107, 107, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 0;
+    min-height: 60px;
+  }
+  
+  .navbar-menu {
+    gap: 15px;
+  }
+  
+  .navbar-nav {
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+  
+  .nav-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .user-welcome {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
